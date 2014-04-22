@@ -1,0 +1,4 @@
+name: UK Government Linked Data Working Group
+relative_permalinks: true
+rootpath: "http://swirrl.github.io/ukgovldwg" # NO TRAILING SLASH
+# rootpath: "/~/ukgovldwg/_site" # for development

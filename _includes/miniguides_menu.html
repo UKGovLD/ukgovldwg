@@ -1,0 +1,23 @@
+<ul>
+	{% for kv_pair in site.data.miniguides.sections %}
+		{% assign section = kv_pair[1] %}
+		<li>
+			{% if section.menupage %}
+				<h3><a href="{{ section.menupage | append:".html" }}">{{ section.title }}</a></h3>
+			{% else %}
+				<h3>{{ section.title }}</h3>
+			{% endif %}
+
+			{% assign the_coll = section.pages %}
+			{% assign subpath = site.data.miniguides.subpath %}
+			{% for item in the_coll %}
+				{% assign item_url = item | prepend:subpath | append:".html" %}
+				{% for p in site.pages %}
+					{% if p.url == item_url %}
+						&ndash; <a href="{{ site.rootpath }}{{ p.url }}">{{ p.title }}</a><br>
+					{% endif %}
+				{% endfor %}
+			{% endfor %}
+		</li>
+	{% endfor %}
+</ul>

@@ -1,0 +1,77 @@
+#
+# This file specifies the organisation of a section of the site
+#
+# An item will appear in the menu iff
+# 1) it is listed in the tree below
+# 2) a valid page exists in /guides with filename as specified below
+#
+# ie
+# - it's safe to add items to this file before the page exists
+#   they will only appear in the menu when the page is there to link to
+# - it's possible to have a file in the folder, published online, but not
+#   included in the menu (eg index.html)
+
+title: Miniguides
+subpath: /miniguides/
+
+sections:
+  intro:
+    title: Introduction to Linked Data
+    pages:
+      - what-is
+      - best-practices
+
+  vocabularies:
+    title: Vocabularies
+    menupage: menu-vocabularies
+    pages:
+      - why-vocabularies
+      - organization
+      - data-cube
+      - dcat
+      - adma
+      - right-statements
+      - provenance
+      - skos
+
+  identifiers:
+    title: Identifiers
+    pages:
+      - what-is-a-persistent-identifier
+      - reference-uris
+
+  publishing:
+    title: Publishing Data
+    pages:
+      - publishing-codelists
+      - semantic-markup
+      - owl
+      - publishing-data-in-local-government
+
+  using:
+    title: Using Data
+    pages:
+      - sparql
+
+  spatial:
+    title: Spatial
+    pages:
+      - inspire
+      - geosparql
+
+  technologies:
+    title: Technologies
+    pages:
+      - rdf
+      - standards
+      - registries
+      - query-translation
+      - apis
+      - indexing
+
+  tools:
+    title: Tools
+    pages:
+      - platforms
+      - editors
+      - triple-stores

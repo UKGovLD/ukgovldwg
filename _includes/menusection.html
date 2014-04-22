@@ -1,0 +1,36 @@
+{% comment %}
+
+	Example usage
+
+	{% include menusection.html coll=site.data.guides %}
+
+	By default this section will use the title of the collection and a tagline set
+	in the YAML frontmatter of the page with the key menu_tagline.
+	
+	Alternatively, these can be overridden by passing parameters to the include tag.
+
+	{% include menusection.html coll=site.data.guides title="Guidance" %}
+
+{% endcomment %}
+
+{% assign the_coll = include.coll %}
+{% assign the_title = the_coll.title %}
+{% assign the_tagline = page.menu_tagline %}
+{% assign the_subpath = the_coll.subpath %}
+
+{% comment %} override default values by adding params to the include tag" {% endcomment %}
+{% if include.title %}{% assign the_title = include.title %}{% endif %}
+{% if include.tagline %}{% assign the_tagline = include.tagline %}{% endif %}
+{% if include.subpath %}{% assign the_subpath = include.subpath %}{% endif %}
+
+<div class="row">
+	<div class="two-thirds">
+		<h1>{{ the_title }}</h1>
+		<h2 class="descriptive">{{ the_tagline }}</h2>
+	</div>
+</div>
+<div class="row">
+	<div class="three-thirds columnise-lists">
+		{% include collection_to_list.html coll=the_coll subpath=the_subpath descriptions=abstract %}
+	</div>
+</div>

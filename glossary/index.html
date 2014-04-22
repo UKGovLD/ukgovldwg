@@ -1,0 +1,20 @@
+---
+title: Glossary
+layout: default
+---
+
+<div class="row">
+	<div class="two-thirds">
+		<h1> {{ page.title }}  </h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis risus non turpis tincidunt tempor. Duis erat tortor, ornare vel nulla vitae, sollicitudin condimentum urna. Nunc nibh neque, fringilla quis luctus bibendum, dapibus vel purus. Quisque massa nisi, sodales vitae sapien vel, convallis porta nibh. Nulla convallis mi at quam viverra commodo. Pellentesque a elit a sem posuere malesuada vel gravida sem.</p>
+	</div>
+</div>
+
+{% include glossary_section_open.html title="L" %}
+	{% include glossary_term.html anchor="linked-data" term="Linked Data" def="Good." %}
+{% include glossary_section_close.html%}
+
+{% include glossary_section_open.html title="U" %}
+	{% include glossary_term.html anchor="unlinked-data" term="Unlinked Data" def="Bad." %}
+	{% include glossary_term.html anchor="unloved-data" term="Unloved Data" def="See <a href='#unlinked-data'>above</a>." %}
+{% include glossary_section_close.html%}

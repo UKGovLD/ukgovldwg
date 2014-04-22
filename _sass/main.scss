@@ -1,0 +1,432 @@
+/* ==========================================================================
+
+
+	 _   _ _  __   ___           _    _____      _____ 
+	| | | | |/ /  / __|_____ __ | |  |   \ \    / / __|
+	| |_| | ' <  | (_ / _ \ V / | |__| |) \ \/\/ / (_ |
+	 \___/|_|\_\  \___\___/\_/  |____|___/ \_/\_/ \___|
+
+
+   ========================================================================== */
+
+/* ==========================================================================
+	GLOBAL VARIABLES
+   ========================================================================== */
+
+$brand_colour: #FC6E51; 
+$breakpoint_mobile: 992px; // bootstrap's default $screen-md;;
+
+/* ==========================================================================
+	SASS UTILITIES
+   ========================================================================== */
+
+@mixin for_mobile {
+	@media (max-width: $breakpoint_mobile) { @content; }
+}
+
+@mixin not_for_mobile {
+	@media (min-width: $breakpoint_mobile) { @content; }
+}
+
+/* ==========================================================================
+	MATCH DGU (includes Bootstrap 3.0)
+
+	the intention here is to work on top of a verbatim copy of the dgu
+	stylesheet for best future compatibility
+   ========================================================================== */
+
+@import "vendor/DGU/dgu"; 
+
+html *{
+	box-sizing:border-box;
+}
+
+#blackbar .brand{
+	background-image: url(http://data.gov.uk/assets/img/dgu-header-white.png) !important;
+	@include for_mobile {
+		margin-bottom: 18px; // ie same as in no-responsive mode. we don't need extra height because we don't have a menu
+	}
+}
+
+/* ==========================================================================
+	EXTEND DGU in similar vein
+   ========================================================================== */
+
+nav {
+	background: $brand_colour;
+	color: #000;
+	margin-bottom:48px;
+	overflow:hidden;
+	padding:8px 0;
+	h1 {
+		font-family: 'Open Sans', 'Helvetica Neue', Helvetica;
+		font-size:1.4em;
+		font-weight:bold;
+		line-height: 1em;
+		margin:0 0 4px 0;
+	}
+	ul {
+		list-style:none;
+		margin:0;
+		padding:0;
+	}
+	li{
+		display:inline;
+		margin:0;
+		padding:3px 25px 4px 0;
+		a {
+			white-space: nowrap;
+		}
+	}
+	a, a:hover {
+		color: white;
+	}
+	a.active {
+		font-weight:bold;
+	}
+
+	@include for_mobile {
+		margin-bottom:12px;
+	}
+}
+
+/* ==========================================================================
+	DGU-like footer, but stickuy
+   ========================================================================== */
+
+html,
+body {
+	height: 100%;
+}
+
+$footer-height: 80px;
+
+#wrap {
+	min-height: 100%;
+	height: auto;
+	margin: 0 auto 0px-$footer-height;
+	padding: 0 0 $footer-height+48px 0;
+}
+
+footer {
+	@extend .footer;
+	border:0 !important;
+	height: $footer-height;
+	overflow: hidden;
+	padding-top: 0px !important;
+	.liner{
+		border-top: 10px solid $brand_colour;
+		padding-top:20px;
+	}
+}
+
+/* ==========================================================================
+	UK GOVERNMENT LDWG STYLES
+   ========================================================================== */
+
+body{
+	background: #fff;
+}
+
+main{
+	
+	dd {
+		padding-left:10px;
+	}
+
+	// typography - pixel sizes to match GOV.UK
+
+	font-size: 19px;
+	line-height: 25px;
+
+	blockquote *, pre, code{
+		font-size: 14px;
+		line-height: 25px;
+	}
+
+	h1, h2, h3 {
+		font-family: 'Open Sans', 'Helvetica Neue', Helvetica;
+		font-weight: bold;
+		text-transform: none;
+	}
+
+	h1{
+		font-size: 48px;
+		line-height: 50px;
+		margin-bottom: 12px;
+	}
+
+	h1.divider{
+		font-weight: normal;
+		font-size: 36px;
+		line-height: 39px;
+		margin-bottom: 20px;
+		margin-top: 45px;
+		padding-bottom:8px;
+		width:100%;
+		border-bottom: 5px solid $brand_colour;
+	}
+
+	h2{
+		font-size: 24px;
+		line-height: 30px;
+		margin-bottom: 9.600000381469727px;
+		margin-top: 28.799999237060547px;
+	}
+
+	h2.descriptive {
+		font-weight: normal;
+		margin-bottom: 48px;
+	}
+
+	h3, h4, h5, h6{
+		font-size: 19px;
+		line-height: 25px;
+		margin-bottom: 14.25px;
+		margin-top: 19px;
+		font-weight:bold;
+	}
+
+	@include for_mobile {
+
+		font-size: 16px;
+		line-height: 20px;
+
+		h1.divider, h1{
+			font-size: 32px;
+			line-height: 35px;
+		}
+
+		h2{
+			font-size: 20px;
+			line-height: 24px;
+			margin-bottom: 8px;
+			margin-top: 24px;
+		}
+
+		h3, h4, h5, h6{
+			font-size: 16px;
+			line-height: 20px;
+			margin-bottom: 12px;
+			margin-top: 16px;
+			font-weight:bold;
+		}
+
+		blockquote *, pre, code{
+			font-size: 12px;
+			line-height: 20px;
+		}
+
+	}
+
+	h4 {
+		color: #666;
+	}
+
+	h5, h6{
+		color: #999;
+	}
+
+	// grid (on bootstrap)
+
+	.one-third{
+		@extend .col-md-4;
+	}
+
+	.two-thirds{
+		@extend .col-md-8;
+	}
+
+	.three-thirds{
+		@extend .col-md-12;
+	}
+
+	.columnise-lists{
+		ul {
+			list-style: none;
+			margin:0;
+			padding: 0;
+			min-height:200px;
+		}
+
+		li {
+			margin:0;
+			padding: 0;
+			@extend .col-md-4;
+			margin-bottom: 24px;
+		}
+
+		@include not_for_mobile {
+			li {
+				min-height:200px; /* HACK - cheap way to obtain equal height cols */
+				padding-right: 10px;
+			}
+		}
+
+	}
+
+	#sidebar {
+
+		border-top: 10px solid $brand_colour;
+		margin-top: 48px;
+
+		@include not_for_mobile {
+			padding: 0 20px;
+			margin-top: 0;
+		}
+
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		li {
+			margin: 0;
+			padding: 0;
+			margin-bottom: 24px;
+		}
+	}
+
+	.status {
+		font-weight: bold;
+		@include not_for_mobile {
+			font-size:0.9em;
+			margin: -24px 0 24px 0;
+			background: lemonchiffon;
+			padding:10px 30px 0 30px;
+			border: 1px solid #ffe537;
+		}
+	}
+
+	.headerblock{
+		background: $brand_colour;
+		color: #fff;
+		margin-bottom:12px;
+		@include not_for_mobile {
+			margin-bottom:48px;
+		}
+		padding: 40px 30px;
+
+		h2{
+			font-weight: normal;
+		}
+
+		nav {
+			h3 {
+				color: white !important
+			}
+			a, a:hover, a:visited, a:active {
+				color: white !important;
+				text-decoration: none;
+			}
+			ol {
+				list-style-type: decimal !important;
+				margin:0;
+				padding: 0;
+			}
+			li {
+				display: block;
+				margin:0;
+				padding: 0;
+			}
+		}
+
+	}
+
+	.guide {
+		blockquote{
+			background: #fafafa;
+		}
+		pre {
+			border:0;
+		}
+		table{
+			border:2px solid #ccc;
+			font-size:0.8em;
+			width: 100%;
+			margin-bottom:24px;
+			border-collapse:collapse;
+			table-layout:fixed;
+			@include not_for_mobile {
+				width:66%;
+			}
+		}
+		td {
+			border: 1px solid #ccc;
+			padding:10px;
+			max-width:30%;
+			vertical-align:top;
+			word-wrap:break-word;
+		}
+		table ul, table li{
+			list-style: none;
+			margin: 0;
+			padding: 0;
+
+		}
+		@include not_for_mobile {
+			>* {
+				margin-left: 379px;
+			}
+
+			h2 {
+				font-size: 48px;
+				line-height: 50px;
+				margin-bottom: 12px;
+			}
+
+			h2, h3 {
+				margin-top: 80px;
+			}
+
+			h2 .number{
+				display: block;
+				font-size: 80px;
+				font-weight: bold;
+				height: 80px;
+				line-height: 80px;
+				margin-bottom: 0px;
+				margin-left: -240px;
+				margin-right: 0px;
+				margin-top: -30px;
+				padding-bottom: 30px;
+				padding-left: 28px;
+				padding-right: 0px;
+				padding-top: 35px;
+				position: absolute;
+				width: 211px;
+			}
+
+
+		}
+	}
+
+	figcaption,
+	.metadata{
+		color: #999;
+		font-size: 0.8em;
+	}
+
+	figure,
+	img{
+		margin-bottom:24px;
+	}
+
+	// colours
+
+	pre, code {
+		color: #333;
+		background: #fafafa;
+	}
+
+	a, a:visited {
+		color: rgb(0, 94, 165) !important;
+		text-decoration:underline;
+	}
+
+	a:hover, a:active {
+		color: rgb(46, 138, 202) !important;
+	}
+	
+}

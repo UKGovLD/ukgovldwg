@@ -1,0 +1,46 @@
+---
+# inspired by https://www.gov.uk/government/publications/operation-of-police-powers-under-the-terrorism-act-2000-and-subsequent-legislation-quarterly-update-to-september-2012--2/operation-of-police-powers-under-the-terrorism-act-2000-and-subsequent-legislation-quarterly-update-to-september-2012-great-britain
+
+layout: default
+---
+{{ if page.status }}
+<div class='row'>
+	<div class='three-thirds status'>
+		<p>{{ page.status }}</p>
+	</div>
+</div>
+{{ endif }}
+<div class='row'>
+	<div class='three-thirds headerblock'>
+		<h2>Guidance</h2>
+		<h1>{{ page.title }}</h1>
+		{% if page.editor %}
+		<p>
+			Editor: {{ page.editor }}
+		</p>
+		{% endif %}
+		{% if page.authorship %}
+		<p>
+			{{ page.authorship }}
+		</p>
+		{% endif %}
+		{% if page.contents %}
+		<nav class="in-page-navigation">
+			<h3>Contents</h3>
+			<ol>
+				{% for item in page.contents %}
+					<li><a href="{{ item[0] }}">{{ item[1] }}</a></li>
+				{% endfor %}
+			</ol>
+		</nav>
+		{% endif %}
+	</div>
+</div>
+<div class='row'>
+	<div class='three-thirds guide'>
+		{{ content }}
+		<div class="metadata">
+		{% if page.author %} Author: {{ page.author }} {% endif %}
+		</div>
+	</div>
+</div>

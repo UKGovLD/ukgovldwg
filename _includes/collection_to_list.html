@@ -1,0 +1,26 @@
+{% assign the_coll = include.coll %}
+{% assign descriptions = include.descriptions %}
+{% assign subpath = include.subpath %}
+
+<ul>
+	{% for item in the_coll.pages %}
+
+		{% assign item_url = item | prepend:subpath | append:".html" %}
+		{% if item_url == page.url %}
+			{% assign c = "current" %}
+		{% else %}
+			{% assign c = "" %}
+		{% endif %}
+	
+		{% for p in site.pages %}
+			{% if p.url == item_url %}
+	<li class="{{ c }}">
+		<h3><a href="{{ site.rootpath }}{{ p.url }}">{{ p.title }}</a></h3>
+		{% if descriptions == abstract %}
+			{{ p.abstract }}
+		{% endif %}
+	</li>
+			{% endif %}
+		{% endfor %}
+	{% endfor %}
+</ul>

@@ -1,0 +1,45 @@
+{% assign the_collection = include.coll %}
+{% assign the_collection_path = include.path %}
+{% assign the_title = include.title %}
+
+<div>
+  {% if the_title %}
+    {% assign index_page_exists = false %}
+    {% assign index_url = "" | prepend:the_collection_path %}
+    <h2>
+    {% for p in site.pages %}
+      {% if p.url == index_url %}
+        <a href="{{ site.url }}{{ p.url }}">{{ the_title }}</a>
+        {% assign index_page_exists = true %}
+      {% endif %}
+    {% endfor %}
+    {% if index_page_exists == false %}
+      {{ the_title }}
+    {% endif %}
+    </h2>
+  {% endif %}
+
+  <aside>
+    {% for section in the_collection %}
+    {% if section.title %}<h4>{{ section.title }}</h4> {% endif %}
+    <ul>
+    {% for item in section.pages %}
+      {% assign item_url = item | prepend:the_collection_path | append:"/" %}
+
+      {% if item_url == page.url %}
+        {% assign c = "current" %}
+      {% else %}
+        {% assign c = "" %}
+      {% endif %}
+
+      {% for p in site.pages %}
+        {% if p.url == item_url %}
+          <li class="{{ c }}"><a href="{{ site.url }}{{ p.url }}">{{ p.title }}</a></li>
+        {% endif %}
+      {% endfor %}
+
+    {% endfor %}
+    </ul>
+    {% endfor %}
+  </aside>
+</div>

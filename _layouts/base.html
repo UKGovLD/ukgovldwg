@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ site.rootpath }}/assets/css/main.css">
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div id="blackbar">
+                <div class="container">
+                    <a class="brand" href="http://data.gov.uk"></a>
+                </div>
+            </div>
+            <nav>
+                <div class="container">
+                    <h1><a href="{{  site.rootpath }}/">{{ site.name }}</a></h1>
+                </div>
+                <div class="container">
+                    <ul class="subnav subnav-data">
+                        {% assign current_section = page.url | remove_first:'/' | split:"/" | first %}
+                        <li><a {% if current_section == "guides" %}class="active"{% endif %} href="{{ site.rootpath }}{{ site.data.guides.subpath }}">{{ site.data.guides.title }}</a></li>
+                        <li><a {% if current_section == "miniguides" %}class="active"{% endif %} href="{{ site.rootpath }}{{ site.data.miniguides.subpath }}">{{ site.data.miniguides.title }}</a></li>
+                        <li><a {% if current_section == "case-studies" %}class="active"{% endif %} href="{{ site.rootpath }}{{ site.data.case-studies.subpath }}">{{ site.data.case-studies.title }}</a></li>
+                        <li><a {% if current_section == "about-us" %}class="active"{% endif %} href="{{ site.rootpath }}{{ site.data.about-us.subpath }}">{{ site.data.about-us.title }}</a></li>
+                        <li><a {% if current_section == "glossary" %}class="active"{% endif %} href="{{ site.rootpath }}{{ site.data.glossary.subpath }}">{{ site.data.glossary.title }}</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            {{ content }}
+        </main>
+    </div>
+    <footer>
+        <div class="liner">
+            <div class="container">
+                <p>Footer text goes here</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
