@@ -71,9 +71,9 @@ nav {
 		padding:0;
 	}
 	li{
-		display:inline;
-		margin:0;
-		padding:3px 25px 4px 0;
+		display: inline;
+		margin: 0;
+		padding: 3px 25px 4px 0;
 		a {
 			white-space: nowrap;
 		}
@@ -82,11 +82,11 @@ nav {
 		color: white;
 	}
 	a.active {
-		font-weight:bold;
+		font-weight: bold;
 	}
 
 	@include for_mobile {
-		margin-bottom:12px;
+		margin-bottom: 12px;
 	}
 }
 
@@ -116,15 +116,18 @@ footer {
 	padding-top: 0px !important;
 	.liner{
 		border-top: 10px solid $brand_colour;
-		padding-top:20px;
+		padding-top: 20px;
 	}
 	a, a:visited {
 		color: rgb(0, 94, 165) !important;
-		text-decoration:underline;
+		text-decoration: underline;
 	}
 
 	a:hover, a:active {
 		color: rgb(46, 138, 202) !important;
+	}
+	img{
+	vertical-align: text-top;
 	}
 }
 
