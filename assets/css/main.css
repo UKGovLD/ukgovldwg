@@ -8848,6 +8848,8 @@ footer {
     text-decoration: underline; }
   footer a:hover, footer a:active {
     color: #2e8aca !important; }
+  footer img {
+    vertical-align: text-top; }
 
 /* ==========================================================================
 	UK GOVERNMENT LDWG STYLES

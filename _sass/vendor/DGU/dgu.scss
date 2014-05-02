@@ -1,3 +1,9 @@
+/*
+
+clone of DGU stylesheet - but with fonts commented out to avoid path error
+
+*/
+
 /*!
  * Bootstrap v3.0.0
  *
@@ -10006,6 +10012,8 @@ a .icon-flip-horizontal:before, a .icon-flip-vertical:before {
     content: "\f18b"
 }
 
+/*
+
 @font-face {
     font-family: 'Open Sans';
     src: url('/assets/font/OpenSans-Regular-webfont.eot');
@@ -10020,7 +10028,7 @@ a .icon-flip-horizontal:before, a .icon-flip-vertical:before {
     src: url('/assets/font/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('/assets/font/OpenSans-Bold-webfont.woff') format('woff'), url('/assets/font/OpenSans-Bold-webfont.ttf') format('truetype'), url('/assets/font/OpenSans-Bold-webfont.svg#open_sansbold') format('svg');
     font-weight: bold;
     font-style: normal
-}
+} */
 
 p, blockquote, body {
     font-smooth: always;
