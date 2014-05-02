@@ -8843,6 +8843,11 @@ footer {
   footer .liner {
     border-top: 10px solid #005ea5;
     padding-top: 20px; }
+  footer a, footer a:visited {
+    color: #005ea5 !important;
+    text-decoration: underline; }
+  footer a:hover, footer a:active {
+    color: #2e8aca !important; }
 
 /* ==========================================================================
 	UK GOVERNMENT LDWG STYLES

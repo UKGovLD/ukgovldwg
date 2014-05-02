@@ -13,7 +13,7 @@
 	GLOBAL VARIABLES
    ========================================================================== */
 
-$brand_colour: #005ea5;; 
+$brand_colour: #005ea5;;
 $breakpoint_mobile: 992px; // bootstrap's default $screen-md;;
 
 /* ==========================================================================
@@ -117,6 +117,14 @@ footer {
 	.liner{
 		border-top: 10px solid $brand_colour;
 		padding-top:20px;
+	}
+	a, a:visited {
+		color: rgb(0, 94, 165) !important;
+		text-decoration:underline;
+	}
+
+	a:hover, a:active {
+		color: rgb(46, 138, 202) !important;
 	}
 }
 
