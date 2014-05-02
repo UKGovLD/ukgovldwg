@@ -20,6 +20,11 @@
 	the intention here is to work on top of a verbatim copy of the dgu
 	stylesheet for best future compatibility
    ========================================================================== */
+/*
+
+clone of DGU stylesheet - but with fonts commented out to avoid path error
+
+*/
 /*!
  * Bootstrap v3.0.0
  *
@@ -7880,18 +7885,23 @@ a .icon-flip-horizontal:before, a .icon-flip-vertical:before {
 .icon-renren:before {
   content: "\f18b"; }
 
+/*
+
 @font-face {
-  font-family: 'Open Sans';
-  src: url("/assets/font/OpenSans-Regular-webfont.eot");
-  src: url("/assets/font/OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/font/OpenSans-Regular-webfont.woff") format("woff"), url("/assets/font/OpenSans-Regular-webfont.ttf") format("truetype"), url("/assets/font/OpenSans-Regular-webfont.svg#open_sansregular") format("svg");
-  font-weight: normal;
-  font-style: normal; }
+    font-family: 'Open Sans';
+    src: url('/assets/font/OpenSans-Regular-webfont.eot');
+    src: url('/assets/font/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('/assets/font/OpenSans-Regular-webfont.woff') format('woff'), url('/assets/font/OpenSans-Regular-webfont.ttf') format('truetype'), url('/assets/font/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal
+}
+
 @font-face {
-  font-family: 'Open Sans';
-  src: url("/assets/font/OpenSans-Bold-webfont.eot");
-  src: url("/assets/font/OpenSans-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/font/OpenSans-Bold-webfont.woff") format("woff"), url("/assets/font/OpenSans-Bold-webfont.ttf") format("truetype"), url("/assets/font/OpenSans-Bold-webfont.svg#open_sansbold") format("svg");
-  font-weight: bold;
-  font-style: normal; }
+    font-family: 'Open Sans';
+    src: url('/assets/font/OpenSans-Bold-webfont.eot');
+    src: url('/assets/font/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('/assets/font/OpenSans-Bold-webfont.woff') format('woff'), url('/assets/font/OpenSans-Bold-webfont.ttf') format('truetype'), url('/assets/font/OpenSans-Bold-webfont.svg#open_sansbold') format('svg');
+    font-weight: bold;
+    font-style: normal
+} */
 p, blockquote, body {
   font-smooth: always;
   -webkit-font-smoothing: antialiased;
@@ -8849,7 +8859,7 @@ footer {
   footer a:hover, footer a:active {
     color: #2e8aca !important; }
   footer img {
-    vertical-align: text-top; }
+    vertical-align: middle; }
 
 /* ==========================================================================
 	UK GOVERNMENT LDWG STYLES
