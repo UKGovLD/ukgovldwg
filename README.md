@@ -16,9 +16,10 @@ Until then, the compiled stylesheet is in the repo, and can be regenerated if ne
 
 sass _sass/main.scss assets/css/main.css
 
-[Tip: i alias something to sass _sass/main.scss assets/css/main.css; jekyll build ]
+Tip: you might find it convenient to alias something to
 
+sass _sass/main.scss assets/css/main.css; jekyll build
 
 ## Stylesheets
 
-data.gov.uk is built on Bootstrap 3 so (slightly reluctantly) we are too.
+data.gov.uk is built on Bootstrap 3 so we are too.

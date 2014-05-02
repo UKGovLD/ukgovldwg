@@ -1,7 +1,7 @@
 /* ==========================================================================
 
 
-	 _   _ _  __   ___           _    _____      _____ 
+	 _   _ _  __   ___           _    _____      _____
 	| | | | |/ /  / __|_____ __ | |  |   \ \    / / __|
 	| |_| | ' <  | (_ / _ \ V / | |__| |) \ \/\/ / (_ |
 	 \___/|_|\_\  \___\___/\_/  |____|___/ \_/\_/ \___|
@@ -8793,7 +8793,7 @@ html * {
 	EXTEND DGU in similar vein
    ========================================================================== */
 nav {
-  background: #fc6e51;
+  background: #005ea5;
   color: #000;
   margin-bottom: 48px;
   overflow: hidden;
@@ -8841,7 +8841,7 @@ footer {
   overflow: hidden;
   padding-top: 0px !important; }
   footer .liner {
-    border-top: 10px solid #fc6e51;
+    border-top: 10px solid #005ea5;
     padding-top: 20px; }
 
 /* ==========================================================================
@@ -8874,7 +8874,7 @@ main {
     margin-top: 45px;
     padding-bottom: 8px;
     width: 100%;
-    border-bottom: 5px solid #fc6e51; }
+    border-bottom: 5px solid #005ea5; }
   main h2 {
     font-size: 24px;
     line-height: 30px;
@@ -8929,7 +8929,7 @@ main {
       /* HACK - cheap way to obtain equal height cols */
       padding-right: 10px; } }
   main #sidebar {
-    border-top: 10px solid #fc6e51;
+    border-top: 10px solid #005ea5;
     margin-top: 48px; }
     @media (min-width: 992px) {
       main #sidebar {
@@ -8953,7 +8953,7 @@ main {
         padding: 10px 30px 0 30px;
         border: 1px solid #ffe537; } }
   main .headerblock {
-    background: #fc6e51;
+    background: #005ea5;
     color: #fff;
     margin-bottom: 12px;
     padding: 40px 30px; }
