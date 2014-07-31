@@ -2,7 +2,7 @@
 title: SPARQL
 layout: miniguide
 author: Leigh Dodds
-abstract: "SPARQL is a query language used to interact with RDF databases or "triple stores"
+abstract: "SPARQL is a query language used to interact with RDF databases"
 ---
 
 SPARQL is a query language used to interact with RDF databases or "triple stores". While Linked Data supports the publication and consumption of data in a variety of data formats using simple HTTP requests, there is often a need to perform custom queries over a dataset. Many Linked Data datasets also expose a query API or "SPARQL endpoint" that allows SPARQL queries to be executed over the dataset, with results returned in a variety of RDF and tabular response formats.
