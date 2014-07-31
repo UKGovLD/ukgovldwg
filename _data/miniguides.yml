@@ -11,7 +11,7 @@
 # - it's possible to have a file in the folder, published online, but not
 #   included in the menu (eg index.html)
 
-title: Miniguides
+title: Guides
 subpath: /miniguides/
 
 sections:
