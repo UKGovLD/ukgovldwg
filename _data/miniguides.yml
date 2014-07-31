@@ -63,6 +63,7 @@ sections:
     title: Technologies
     pages:
       - rdf
+      - sparql
       - standards
       - registries
       - query-translation
