@@ -1,3 +1,11 @@
+---
+title: Linked data registries and talking about the weather
+layout: casestudy
+author: Jeremy Tandy
+abstract: A case study describing the use of linked data registries by the WMO
+published: true
+---
+
 Here in the UK we love to talk about the weather; it’s in our nature. But whilst we humans can deal with the ambiguity of everyday conversations, machines and software agents just don’t stand a chance. We might say that “it is misty with a temperature of 4 degrees” and the chances are you’ll have a good idea of what I mean (except if you’re from the US where you’ll think that I’m talking Fahrenheit rather than Celsius!). Without the benefit of context, machines can't infer that “mist” is the prevailing weather condition, that I’m talking about “temperature” of the air excluding effects of wind chill or warming from the sun and that, as a European, I’m stating the temperature value in “degrees” Celsius. To be interoperable, machines need all these details spelled out explicitly in the data they exchange.
 
 The World Meteorological Organization (WMO), a UN specialised agency, facilitates the “free and unrestricted exchange of data and information [relating to weather, water resources and climate] in real- or near real-time relating to safety and security of society, economic welfare and the protection of the environment”. Since 1963 WMO has been operating a programme called the “World Weather Watch” that, amongst other things, coordinates the routine sharing of weather observations from the meteorological services of Member States. Without this international collaboration, the Met Office would be unable to forecast the weather for the UK or effectively monitor climate change.  
