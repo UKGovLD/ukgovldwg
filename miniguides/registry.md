@@ -41,7 +41,7 @@ The Linked Data Registry, developed under the sponsorship of the UKGovLD Working
 
 For more information on the Linked Data Registry see:
 
-   * [Documentation](https://github.com/UKGovLD/ukl-registry-poc/wiki) then slides are ava
+   * [Documentation](https://github.com/UKGovLD/ukl-registry-poc/wiki) 
    * [Introductory webinar slides](http://www.slideshare.net/der42/registry-webinar)
    * [Technical training slides](http://www.slideshare.net/der42/registry-technical-training)
 
