@@ -43,6 +43,7 @@ sections:
   publishing:
     title: Publishing Data
     pages:
+      - registry
       - publishing-codelists
       - semantic-markup
       - owl
