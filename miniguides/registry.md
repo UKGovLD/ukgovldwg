@@ -43,7 +43,7 @@ For more information on the Linked Data Registry see:
 ## Deployed examples
 
 Service | Status | Deployment sources
----|---
+---|---|---
 [Environment registry](http://environment.data.gov.uk/registry/) | Alpha pilot | [registry-deploy-env](Source)
 [Location registry](http://location.data.gov.uk/registry/) | Alpha pilot | [registry-deploy-loc](Source)
 [Training registry](http://environment.data.gov.uk/registry/) | Training only | 
