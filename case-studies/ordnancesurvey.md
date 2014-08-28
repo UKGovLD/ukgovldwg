@@ -25,11 +25,13 @@ This offers great potential to data publishers. By linking to identifiers for pl
 
 Ordnance Survey first published its linked data in April 2010 and have seen a continued growth of the use in government and research. Last year the linked data platform was relaunched with a number of improvements:
 
-    Developed a data hub that provides access to all our Linked Data datasets, with integrated search to enable anyone to easily locate resources of interest.
-    Embedded OS OpenSpace maps to show the geographic location chosen.
-    Separate datasets, which will allow you to narrow down your searches. For example, if you are looking for postcode information, you can query just the Code-Point Open Linked dataset.
-    Improved metadata for each dataset such as publication dates, licensing terms and coverage.
-    SPARQL 1.1 compliant endpoints for all datasets, which provide more functionality for querying our Linked Data.
-    Redesigned search API based on the OpenSearch specification and with support for geography based queries.
-    Support for the Open Refine Reconciliation API, which will allow you to more easily link your data with ours.
-    All new API documentation and interactive tools for all API’s, including integrated example resources and queries.
+- Developed a data hub that provides access to all our Linked Data datasets, with integrated search to enable anyone to easily locate resources of interest.
+- Embedded OS OpenSpace maps to show the geographic location chosen.
+- Separate datasets, which will allow you to narrow down your searches. For example, if you are looking for postcode information, you can query just the Code-Point Open Linked dataset.
+- Improved metadata for each dataset such as publication dates, licensing terms and coverage.
+- SPARQL 1.1 compliant endpoints for all datasets, which provide more functionality for querying our Linked Data.
+- Redesigned search API based on the OpenSearch specification and with support for geography based queries.
+- Support for the Open Refine Reconciliation API, which will allow you to more easily link your data with ours.
+- All new API documentation and interactive tools for all API’s, including integrated example resources and queries.
+
+Ordnance Survey's linked data offering continues to offer important geographic context to a number of other linked data sets published by local and central government including data from the Environment Agency, The Gazettee, The Land Registry and the Deptarment of Communities and Local Government. 
