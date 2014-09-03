@@ -1,7 +1,9 @@
+---
 title: Linked Data at the Department for Communities and Local Government - an introduction
 layout: casestudy
 author: Steve Peters
 abstract: A case study introducing why Linked Data matters for DCLG, and what the Department is doing to create, publish and use it.
+---
 
 Data matters to DCLG and its partner network.  It is the facts and evidence to help us understand and address real-world issues and problems.  
 
