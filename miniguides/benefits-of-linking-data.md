@@ -1,0 +1,48 @@
+---
+title: Benefits of Linking Data
+layout: miniguide
+author: Leigh Dodds
+abstract: "There are many ways to make data useful but the most fundamental is to make it accessible. By giving identifiers (URIs) to the things in a dataset we can make them part of the web infrastructure and by going a step further and providing machine-readable data at those URIs, we can make that data more accessible to applications"
+---
+
+There are many ways to make data useful but the most fundamental is to make it accessible: available for anyone to access and use without restrictions in format or licensing. This is the basic ethos of the Open Data movement and a key driver behind Open Government Data.
+
+While providing tools for browsing and visualising data is another important means for making that data useful to a broad variety of people, another very important aspect is ensuring that the data has context. All data has some relevant context. Who has published the data? How was it collected? Are there any caveats that are important to its reuse and interpretation? To what does the data refer, and how do those things relate to one another?
+
+Linked Data is data on the web. By giving identifiers (URIs) to the things in a dataset -- e.g. places, schools, geographic areas -- we can make them part of the web infrastructure. We can apply the same principle to individual data items and statistical observations, e.g. hospital waiting times and bathing water samples. This immediately lets us point to those things using our existing tools: we can reference them in emails, news articles and discussions.
+
+By going a step further and providing machine-readable data at those URIs, we can make that data more accessible to applications, helping developers integrate data into their applications. And, by following links in the dataset, we can discover more useful data. This extra context can help drive further application behaviour.
+
+## Lets look at this in practical terms.
+
+This URI identifies one of the two beaches in Lyme Regis: [http://environment.data.gov.uk/id/bathing-water/ukk2205-21500](http://environment.data.gov.uk/id/bathing-water/ukk2205-21500). As a reader you can view a description of that beach in your browser letting you discover some basic information, such as where it is, and also links to further data, such as sampling points, etc.
+
+The real power though comes from accessing that data via application code. Using HTTP [Content Negotiation](http://en.wikipedia.org/wiki/Content_negotiation) we can request the data about that resource in a number of other formats, including: [JSON](http://environment.data.gov.uk/doc/bathing-water/ukk2205-21500.json), [XML](http://environment.data.gov.uk/doc/bathing-water/ukk2205-21500.xml), [RDF](http://environment.data.gov.uk/doc/bathing-water/ukk2205-21500.rdf) and even [CSV](http://environment.data.gov.uk/doc/bathing-water/ukk2205-21500.csv). By making a simple HTTP request we can fetch that information in whatever format works best for our needs.
+
+Linked Data is based on RDF which represents data as a graph: a collection of resources with relationships to one another. This makes it suitable for capturing a wide variety of different data models. Whether you're describing the hierarchical structure of an organisation; the administrative geography of the UK; or a series of statistical data points, RDF allows you to capture the relevant data.
+
+But, as the above example shows, just because the Environment Agency is choosing to store its data as RDF, we don't have to consume it as RDF. The data in an RDF graph can be extracted and made available in any number of different formats. Some of those formats are serializations of RDF, such as [Turtle](http://www.w3.org/TR/turtle/). Others are just simple XML and JSON views of the same information. Depending on the data being accessed a number of different formats could be available, e.g. [iCal](http://en.wikipedia.org/wiki/ICalendar) for events, or [KML](http://en.wikipedia.org/wiki/KML) for geographic data.
+
+So Linked Data doesn't necessarily require us to re-tool and use a different set of technologies when building applications. An organisation can use the richness of the RDF model to capture the detailed relationships in their data and share that in multiple ways. This is an often overlooked benefit of the approach. We're not locked into a simple representation.
+
+Now, lets see how we can find some additional useful context from the data by following links. Examining the [the JSON data about the beach](http://environment.data.gov.uk/doc/bathing-water/ukk2205-21500.json), we can discover that (unsurprisingly) it is in Dorset. If this data had been published as a simple CSV file, then the county might have been referenced by its name. E.g. its formal name, "The County of Dorset", or perhaps just more colloquially: "Dorset". Alternatively, the counties might have been referenced by a unique identifier, e.g. from the Ordnance Survey or the Office of National Statistics.
+
+This loses some of the richness in the underlying data and disconnects it from some useful context. E.g. what is we wanted to find all of the beaches in the South West, of which Dorset is just one county? If we had a unique identifier for Dorset, then we would need another dataset that mapped county identifiers to regions. If we were starting from just a label ("Dorset") then we would first have to match the label to an identifier, and then find the additional context. Accurately reconciling these names and identifiers, and then mashing them up with additional datasets, creates additional work for developers who need to find the relevant data and ensure the matching is done correctly. Very often this effort is bespoke to a particular dataset, so has to be repeated as more datasets are added to an application.
+
+Linked Data eliminates much of the need for consumers to do this extra data processing. In our example dataset the Environment Agency have chosen to link to the Ordnance Survey to identify counties and districts. Instead of a label or an identifier we instead find a [http://data.ordnancesurvey.co.uk/id/7000000000014362](http://data.ordnancesurvey.co.uk/id/7000000000014362). If we want to discover more data about a county, then we can follow that link in either a web browser or some application code. It doesn't matter where the dataset lives or who publishes it, we just follow a link. No bespoke coding or API interaction required.
+
+Following the county link in the example, we can find out more data about the County of Dorset in the Ordnance Survey Linked Data. For example we can find neighbouring regions, boundary information describing the geographical area, and additional useful identifiers such as Office of National Statistics (ONS) area codes.
+
+Through this simple following of links, we can easily find more data and retrieve it in a format(s) that we want to process. The data could be used dynamically to build a user interface or harvested and stored locally to drive some analysis. Using just our example data, we could for example explore how to summarise bathing water quality data as a county or regional level. Or, having found census codes in the Ordnance Survey data, we could mashup additional data from the ONS to create an application that used census information to assess the health impacts of poor water quality on a regional basis.
+
+Linked Data simplifies the process of creating these kinds of mashup, because it:
+
+* removes the need for consumers of the data to reconcile datasets, by instead including explicit identifiers
+* removes the need for consumers to have to manually find new datasets because they can follow links in the data
+* enables provision of data in a variety of different data formats, allowing consumers to access it how they need it.
+
+We can reap these benefits by writing code that follows links in the data we access, in the formats of our choosing. There's no need to involve complex RDF processing or SPARQL queries. While these technologies can provide additional benefits, e.g. by providing additional ways to query and slice a dataset, they're not essential. By focusing on them we can miss the more immediate benefits of a Linked Data approach.
+
+This simplicity does comes at the expense of placing more work on the data publisher who has to ensure that the data they're publishing is usefully linked. But arguably this is an important aspect of responsible publishing of Open Government Data. Relying on human-readable labels and opaque codes, rather than clear explicit identifiers, obscures the necessary context that can help make data useful, easier to interpret and ultimately to drive innovative applications. Precision needn't be relegated to a footnote in a human-readable spreadsheet, it can be directly included in the data.
+
+In reality many of these inter-dataset are already available, but they are not routinely included in releases of data in spreadsheets or CSV files. Various government agencies have a responsibility to maintain and share identifiers that are used across government. Publishing these identifiers using a Linked Data approach can provide a number of benefits, not least of which is the creation of a core digital infrastructure that describes our roads, schools, transport networks and more. This infrastructure can then be steadily enriched by the addition of more data from across both the public and private sector. Linked Data provides an important technical foundation that complements a "release early, release often" approach to Open Government Data.

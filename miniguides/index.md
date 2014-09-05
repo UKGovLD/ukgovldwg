@@ -2,7 +2,7 @@
 title: Miniguides
 layout: default
 
-menu_tagline: Miniguides are shorter articles concentrating on a specific theme or technology.
+menu_tagline: Guides are articles concentrating on a specific theme or technology.
 ---
 
 <div class="row">

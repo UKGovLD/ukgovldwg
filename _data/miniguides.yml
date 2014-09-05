@@ -11,7 +11,7 @@
 # - it's possible to have a file in the folder, published online, but not
 #   included in the menu (eg index.html)
 
-title: Miniguides
+title: Guides
 subpath: /miniguides/
 
 sections:
@@ -43,6 +43,7 @@ sections:
   publishing:
     title: Publishing Data
     pages:
+      - registry
       - publishing-codelists
       - semantic-markup
       - owl
@@ -63,6 +64,7 @@ sections:
     title: Technologies
     pages:
       - rdf
+      - sparql
       - standards
       - registries
       - query-translation

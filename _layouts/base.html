@@ -21,8 +21,8 @@
                 <div class="container">
                     <ul class="subnav subnav-data">
                         {% assign current_section = page.url | remove_first:'/' | split:"/" | first %}
-                        <li><a {% if current_section == "guides" %}class="active"{% endif %} href="{{ site.rootpath }}{{ site.data.guides.subpath }}">{{ site.data.guides.title }}</a></li>
                         <li><a {% if current_section == "miniguides" %}class="active"{% endif %} href="{{ site.rootpath }}{{ site.data.miniguides.subpath }}">{{ site.data.miniguides.title }}</a></li>
+                        <li><a {% if current_section == "guides" %}class="active"{% endif %} href="{{ site.rootpath }}{{ site.data.guides.subpath }}">{{ site.data.guides.title }}</a></li>
                         <li><a {% if current_section == "case-studies" %}class="active"{% endif %} href="{{ site.rootpath }}{{ site.data.case-studies.subpath }}">{{ site.data.case-studies.title }}</a></li>
                         <li><a {% if current_section == "about-us" %}class="active"{% endif %} href="{{ site.rootpath }}{{ site.data.about-us.subpath }}">{{ site.data.about-us.title }}</a></li>
                         <li><a {% if current_section == "glossary" %}class="active"{% endif %} href="{{ site.rootpath }}{{ site.data.glossary.subpath }}">{{ site.data.glossary.title }}</a></li>
@@ -37,7 +37,7 @@
     <footer>
         <div class="liner">
             <div class="container">
-                <p>Licensed under  <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/"><img src="{{ site.rootpath }}/assets/images/ogl-symbol.png" alt="OGL">Open Government Licence.</a></p>
+                <p> <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/"><img src="{{ site.rootpath }}/assets/images/ogl-symbol.png" alt="OGL"></a> All content is available under the <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/">Open Government Licence v2.0.</a> except where otherwise stated.</p>
             </div>
         </div>
     </footer>
