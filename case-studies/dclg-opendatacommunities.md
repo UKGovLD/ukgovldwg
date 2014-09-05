@@ -37,7 +37,11 @@ Introducing OpenDataCommunities
 -------------------------------
 At the time of writing, OpenDataCommunities comprises 154 Linked Data sources drawn from DCLG’s statistical and geographic data portfolio.  These have been selected by working closely with DCLG’s data owners and end-users: thereby ensuring that datasets can be published in new open and linkable forms, and will be actively used. 
 
-Alongside the data repository are low-cost, innovative tools that illustrate how our data can be utilised in new and innovative ways.  Two examples are: (a) a dashboard providing a selection of our data about individual Local Authorities; and (b) visualisation of new experimental statistics on the Energy Performance of buildings – see screenshots and links below. Our experience is that basic visualisation tools like these are important to help users understand potential re-uses, and are therefore an essential ingredient of stimulating others to develop innovative new tools and insights.
+Alongside the data repository are low-cost, innovative tools that illustrate how our data can be utilised in new and innovative ways.  Two examples are: (a) a dashboard of key indicators in DCLG's business plan; and (b) visualisation of new  Help-to-Buy statistics for Local Authorities, Parliamentary Constituencies and Postcode Sectors.
+
+| ![DCLG business plan indicators](../assets/images/dclg-dashboard.png "DCLG business plan indicators") | ![Help-to-Buy Local Statistics](../assets/images/help-to-buy.png "Help-to-Buy local statistics") |
+
+Our experience is that basic visualisation tools like these are important to help users understand potential re-uses, and are therefore an essential ingredient of stimulating others to develop innovative new tools and insights.
 
 An equally significant aspect of OpenDataCommunities is: Partnerships with local public bodies (particularly Local Authorities) to test and demonstrate the power and potential of blending local and national sources.  We are collaborating with various Local Authorities and national bodies such as the Local Government Association, to illustrate new ways of linking DCLG and local sources over the web.   
 
