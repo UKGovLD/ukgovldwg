@@ -1,0 +1,16 @@
+#
+# This file specifies the organisation of a section of the site
+#
+# An item will appear in the menu iff
+# 1) it is listed in the tree below
+# 2) a valid page exists in /guides with filename as specified below
+#
+# ie
+# - it's safe to add items to this file before the page exists
+#   they will only appear in the menu when the page is there to link to
+# - it's possible to have a file in the folder, published online, but not
+#   included in the menu (eg index.html)
+
+title: Further Reading
+subpath: /further-reading/
+pages:
