@@ -1,6 +1,6 @@
 ---
 title: Why vocabularies?
-layout: miniguide
+layout: guides
 abstract: An introductory miniguide to vocabularies and why they are useful.
 ---
 

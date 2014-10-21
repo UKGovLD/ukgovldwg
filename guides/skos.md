@@ -1,6 +1,6 @@
 ---
 title: SKOS
-layout: miniguide
+layout: guides
 abstract: A miniguide about the SKOS vocabulary.
 ---
 

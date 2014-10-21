@@ -1,6 +1,6 @@
 ---
 title: Organization ontology
-layout: miniguide
+layout: guides
 author: Dave Reynolds
 abstract: "The ontology is designed to enable publication of information on organizations and organizational structures including governmental organizations. It provides a generic, reusable core ontology that can be extended or specialized for use in particular situations."
 ---

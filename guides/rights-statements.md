@@ -1,6 +1,6 @@
 ---
 title: The Open Data Rights Statement Vocabulary
-layout: miniguide
+layout: guides
 author: Leigh Dodds
 abstract: "It is important that Open Data is clearly licensed so that consumers can understand any requirements that apply to re-use of a dataset. The rights statement vocabulary supports publishing licensing metadata in machine-readable formats"
 ---
