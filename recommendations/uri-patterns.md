@@ -7,7 +7,7 @@
 #    use 4 spaces for tabs 
 #    show whitespace characters
 
-layout: guide
+layout: recommendations
 title: URI Patterns
 
 # :version, :editor and :authorship, if set, will appear in the coloured page masthead block
