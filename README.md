@@ -1,3 +1,67 @@
+#UK Government Linked Data Working Group Site
+
+## The FIXME steps process to contribute
+
+### Markdown
+
+Articles, guides, recommendations, everything here is writen in [Markdown](http://en.wikipedia.org/wiki/Markdown). If you never tried Markdown you'll get used to it soon as it's really easy. You can write markdown in any text editor, some are better because you can preview your file directly, but you can also just try a [markdown preview site](http://markdownlivepreview.com). Another solution you may enjoy would be [prose.io](http://prose.io) that allows you to edit your github's markdown files easily. 
+
+### Step by step
+
+You need to have [git](http://git-scm.com) and [gem](https://rubygems.org/pages/download) installed.
+
+1. Clone the github repo
+
+    `$ git clone https://github.com/UKGovLD/ukgovldwg.git`
+
+    `$ cd ukgovldwg/`
+
+2. Create a new branch
+
+    `$ git checkout -b your-branch-name`
+
+3. Run the server
+
+    `$ gem install jekyll`
+
+    `$ jekyll serve`
+
+    Then go to [http://localhost:4000/](http://localhost:4000/)
+
+4. Create your file
+
+    In `guides/`, `recommendations/` or `case-studies/` create your new file `your-file-name.md`
+
+5. Use the template
+
+    In each repository,there is a `*-template.md`file, copy-paste the content in your new file.
+
+6. Write your content
+
+    And don't forget to save your markdown file when it's done.
+
+7. Add it to the site
+
+    In the `_data/` repository, there are some `.yml` files, if you've writen a guide: open `guides.yml`. Now you can add your article in the corresponding section by adding `- your-file-name`
+
+8. Check everything
+
+    Go to [localhost](http://localhost:4000), check if everything is as you wanted.
+
+9. Push it to GitHub
+
+    `$ git add --all`
+    `$ git commit -m "what have you done?"`
+    `$ git push origin your-branch-name`
+    
+10. Pull Request
+
+    Go to https://github.com/UKGovLD/ukgovldwg/tree/your-branch-name and check everything is ok.
+
+    Click the green button "Compare, review, create a pull request"
+
+    Create pull request
+
 ## Site Organisation
 
 Jekyll is about to release v2.0 which incorporates a major new feature, _collections_.
