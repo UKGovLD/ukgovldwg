@@ -52,7 +52,7 @@ You need to have [git](http://git-scm.com) and [gem](https://rubygems.org/pages/
 
 8. Check everything
 
-    Go to [localhost](http://localhost:4000), check if everything is as you wanted.
+    Go to [localhost](http://localhost:4000), check if everything is as you wanted. Be careful, links may redirect you to the online version so check if you are still on localhost if your changes don't appear. 
 
 9. Push it to GitHub
 
