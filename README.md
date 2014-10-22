@@ -30,7 +30,7 @@ You need to have [git](http://git-scm.com) and [gem](https://rubygems.org/pages/
 
 4. Use the template
 
-    In each repository,there is a `*-template.md`file, copy-paste the content in your new file.
+    In each repository,there is a `*-template.md` file, copy-paste the content in your new file.
 
 5. Write your content
 
