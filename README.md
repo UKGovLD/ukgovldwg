@@ -1,6 +1,6 @@
 #UK Government Linked Data Working Group Site
 
-## The FIXME steps process to contribute
+## The 9 steps process to contribute
 
 ### Markdown
 
@@ -16,11 +16,7 @@ You need to have [git](http://git-scm.com) and [gem](https://rubygems.org/pages/
 
     `$ cd ukgovldwg/`
 
-2. Create a new branch
-
-    `$ git checkout -b your-branch-name`
-
-3. Run the server
+2. Run the server
 
     `$ gem install jekyll`
 
@@ -28,17 +24,27 @@ You need to have [git](http://git-scm.com) and [gem](https://rubygems.org/pages/
 
     Then go to [http://localhost:4000/](http://localhost:4000/)
 
-4. Create your file
+3. Create your file
 
     In `guides/`, `recommendations/` or `case-studies/` create your new file `your-file-name.md`
 
-5. Use the template
+4. Use the template
 
     In each repository,there is a `*-template.md`file, copy-paste the content in your new file.
 
-6. Write your content
+5. Write your content
 
     And don't forget to save your markdown file when it's done.
+
+6. Add pictures
+
+    You can add pictures in markdown, from an url:
+    
+    `![text-image](url-of-the-picture)`
+
+    or by putting the picture in `assets/images`:
+
+    `![text-image](../assets/images/name-of-the-picture.jpg)`
 
 7. Add it to the site
 
@@ -51,17 +57,11 @@ You need to have [git](http://git-scm.com) and [gem](https://rubygems.org/pages/
 9. Push it to GitHub
 
     `$ git add --all`
-    `$ git commit -m "what have you done?"`
-    `$ git push origin your-branch-name`
     
-10. Pull Request
+    `$ git commit -m "what have you done?"`
 
-    Go to https://github.com/UKGovLD/ukgovldwg/tree/your-branch-name and check everything is ok.
-
-    Click the green button "Compare, review, create a pull request"
-
-    Create pull request
-
+    `$ git push`
+    
 ## Site Organisation
 
 Jekyll is about to release v2.0 which incorporates a major new feature, _collections_.
