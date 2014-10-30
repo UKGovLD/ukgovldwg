@@ -11,10 +11,8 @@
 # - it's possible to have a file in the folder, published online, but not
 #   included in the menu (eg index.html)
 
-title: Case Studies
-subpath: /case-studies/
+title: Recommendations
+subpath: /recommendations/
 pages:
-  - dclg-opendatacommunities
-  - ea-bathing-waters
-  - ordnancesurvey
-  - registries-and-weather
+  - uri-patterns
+  - uri-patterns-for-locations

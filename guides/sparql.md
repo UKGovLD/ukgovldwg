@@ -1,6 +1,6 @@
 ---
 title: SPARQL
-layout: miniguide
+layout: guides
 author: Leigh Dodds
 abstract: "SPARQL is a query language used to interact with RDF databases"
 ---

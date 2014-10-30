@@ -1,6 +1,6 @@
 ---
 title: Linked Data Registry
-layout: miniguide
+layout: guides
 author: Dave Reynolds
 abstract: "The Linked Data Registry enables organizations to collaboratively publishing and maintain reference data, such as a code lists, as persistent resolvable URIs. This guide introduces the notion of the registry and provides links to documentation and running examples."
 ---

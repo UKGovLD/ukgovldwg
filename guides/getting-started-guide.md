@@ -1,3 +1,7 @@
+---
+title: Getting Started Guide
+layout: guides
+---
 #Getting Started
 
 ##Introduction

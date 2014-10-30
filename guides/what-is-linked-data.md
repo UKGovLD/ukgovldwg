@@ -1,6 +1,6 @@
 ---
 title: What is Linked Data
-layout: miniguide
+layout: guides
 author: John Goodwin
 abstract: a brief introduction to the concept of Linked Data.
 published: true

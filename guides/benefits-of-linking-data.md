@@ -1,6 +1,6 @@
 ---
 title: Benefits of Linking Data
-layout: miniguide
+layout: guides
 author: Leigh Dodds
 abstract: "There are many ways to make data useful but the most fundamental is to make it accessible. By giving identifiers (URIs) to the things in a dataset we can make them part of the web infrastructure and by going a step further and providing machine-readable data at those URIs, we can make that data more accessible to applications"
 ---

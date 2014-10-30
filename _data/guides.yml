@@ -11,8 +11,69 @@
 # - it's possible to have a file in the folder, published online, but not
 #   included in the menu (eg index.html)
 
-title: Recommendations
+title: Guides
 subpath: /guides/
-pages:
-  - uri-patterns
-  - uri-patterns-for-locations
+
+sections:
+  intro:
+    title: Introduction to Linked Data
+    pages:
+      - what-is
+      - best-practices
+
+  vocabularies:
+    title: Vocabularies
+    menupage: menu-vocabularies
+    pages:
+      - why-vocabularies
+      - organization
+      - data-cube
+      - dcat
+      - adma
+      - rights-statements
+      - provenance
+      - skos
+
+  identifiers:
+    title: Identifiers
+    pages:
+      - what-is-a-persistent-identifier
+      - reference-uris
+
+  publishing:
+    title: Publishing Data
+    pages:
+      - registry
+      - publishing-codelists
+      - semantic-markup
+      - owl
+      - publishing-data-in-local-government
+
+  using:
+    title: Using Data
+    pages:
+      - sparql
+
+  spatial:
+    title: Spatial
+    pages:
+      - inspire
+      - geosparql
+
+  technologies:
+    title: Technologies
+    pages:
+      - rdf
+      - sparql
+      - standards
+      - registries
+      - query-translation
+      - apis
+      - indexing
+
+  tools:
+    title: Tools
+    pages:
+      - platforms
+      - editors
+      - triple-stores

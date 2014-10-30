@@ -1,6 +1,6 @@
 ---
 title: Data Cube Vocabulary
-layout: miniguide
+layout: guides
 author: Dave Reynolds
 abstract: "People often think of linked data as being a way to connect descriptions of things into a graph of relationships, for example to link a school to the organization that oversees it. So how do we deal with data which is naturally presented as tables and charts, things like official statistics or environmental measurements?"
 ---
