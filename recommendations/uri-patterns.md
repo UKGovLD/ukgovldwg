@@ -34,7 +34,6 @@ contents : [
 
 # :status, if set will appear as a warning stripe at the top of the page. use this to mark documents as work in progress etc
 
-status: "Note: This is a draft version that will be informed by the standards.data.gov.uk process and will move to a new home after that."
 
 # The :abstract is the summary of the article that appears on pages which link to this one
 
@@ -100,7 +99,7 @@ By preference, data publishers should avoid creating new vocabularies and make u
 
 One of the main reasons for publishing [reference data](#definition-reference-data) as URI Sets is to create common points of reference for data published as Datasets by others. Whereas a 'URI Set' contains reference data, a Dataset contains transactional data that links to reference items using URIs from the relevant 'URI Set'
 
-In order to publish information about bathing-water quality there is a need to be able to refer to the bathing-waters whose water quality is being reported;; to publish traffic-count statistics, there is a need to be able to refer to traffic-count points where counts are taken;; to publish education statistics a need to be able to refer to educational establishments and so forth. URI Sets of bathing-waters, traffic-count points and educational establishments provide these points of common reference.
+In order to publish information about bathing-water quality there is a need to be able to refer to the bathing-waters whose water quality is being reported;; to publish traffic-count statistics, there is a need to be able to refer to traffic-count points where counts are taken;; to publish education statistics a need to be able to refer to educational establishments and so forth. URI Sets of bathing-waters, traffic-count points and educational establishments provide these points of common reference.
 
 Some URI sets are more widely re-usable than others. They act as the connections points between the Datasets that use them. For example the administrative geographies of the UK published by both the Ordnance Survey and the Office of National Statistics are use by many financial, statistical or observational Datasets that have at least one statistical dimension aligned with the corresponding administrative geography.
 
