@@ -25,8 +25,6 @@ contents : [
 
 # :status, if set will appear as a warning stripe at the top of the page. use this to mark documents as work in progress etc
 
-status: "Note: This is a draft version that will be informed by the standards.data.gov.uk process and will move to a new home after that."
-
 # The :abstract is the summary of the article that appears on pages which link to this one
 
 abstract: "A short synopsis of the page goes here"
